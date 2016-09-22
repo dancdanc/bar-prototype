@@ -1,0 +1,47 @@
+#wrapper {
+	position: relative;
+	width: 100%;
+	height: 30px;
+	background-color: lightgrey;
+}
+#bar-ind {
+	position: relative;
+	left: 0;
+	width: 0%;
+	height: 100%;
+	background-color: yellow;
+	transition: width 500ms ease-in-out;
+	-webkit-transition: width 500ms ease-in-out;
+	float: left;
+}
+#bar-dem {
+	position: relative;
+	left: 0;
+	width: 0%;
+	height: 100%;
+	background-color: blue;
+	transition: width 500ms ease-in-out;
+	-webkit-transition: width 500ms ease-in-out;
+	float: left;
+}
+
+#bar-gop {
+	position: relative;
+	right: 0;
+	width: 0%;
+	height: 100%;
+	background-color: red;
+	transition: width 500ms ease-in-out;
+	-webkit-transition: width 500ms ease-in-out;
+	float: right;
+}
+
+#status {
+	position: absolute;
+	right: 0;
+	border-style: solid;
+	border-color: black;
+	border-width: 1px;
+	margin: 0px 8px 0px 0px;
+	padding: 5px;
+}
