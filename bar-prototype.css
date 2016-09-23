@@ -4,16 +4,40 @@
 	height: 30px;
 	background-color: lightgrey;
 }
+
+#bar-sen-ind {
+	position: relative;
+	left: 0;
+	width: 0%;
+	height: 100%;
+	background-color: goldenrod;
+	transition: width 500ms ease-in-out;
+	-webkit-transition: width 500ms ease-in-out;
+	float: left;
+}
+
 #bar-ind {
 	position: relative;
 	left: 0;
 	width: 0%;
 	height: 100%;
-	background-color: yellow;
+	background-color: gold;
 	transition: width 500ms ease-in-out;
 	-webkit-transition: width 500ms ease-in-out;
 	float: left;
 }
+
+#bar-sen-dem {
+	position: relative;
+	left: 0;
+	width: 0%;
+	height: 100%;
+	background-color: darkblue;
+	transition: width 500ms ease-in-out;
+	-webkit-transition: width 500ms ease-in-out;
+	float: left;
+}
+
 #bar-dem {
 	position: relative;
 	left: 0;
@@ -23,6 +47,17 @@
 	transition: width 500ms ease-in-out;
 	-webkit-transition: width 500ms ease-in-out;
 	float: left;
+}
+
+#bar-sen-gop {
+	position: relative;
+	right: 0;
+	width: 0%;
+	height: 100%;
+	background-color: darkred;
+	transition: width 500ms ease-in-out;
+	-webkit-transition: width 500ms ease-in-out;
+	float: right;
 }
 
 #bar-gop {
@@ -44,4 +79,8 @@
 	border-width: 1px;
 	margin: 0px 8px 0px 0px;
 	padding: 5px;
+}
+
+#senateseats {
+	display: inline;
 }

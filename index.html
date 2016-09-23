@@ -8,15 +8,46 @@
 		<meta name="author" content="dr.dk">
 		<link rel="stylesheet" href="bar-prototype.css?v=1.0">
 	</head>
-	<body onload="countVotes();">
-		<script src="bar-prototype.js"></script>
+	<body onload="initialVotes();">
 		<div id="wrapper">
-			<div id="bar-ind"></div>
+			<div id="bar-sen-dem"></div>
 			<div id="bar-dem"></div>
+			<div id="bar-sen-ind"></div>
+			<div id="bar-ind"></div>
+			<div id="bar-sen-gop"></div>
 			<div id="bar-gop"></div>
 		</div>
 		<div>
 			<div id="status">Optælling</div>
 		</div>
+		<div>
+			<form id="votesheet" action="javascript:updateVotes();">
+				<br>
+				Election Type:<br>
+				<select id="electiontype">
+					<option value="P">Presidential</option>
+					<option value="H">House</option>
+					<option value="S">Senate</option>
+				</select><br><br>
+				<span id="unitstotaltext">Total Units:</span><br>
+				<input type="text" id="unitstotal" value="0"><br><br>
+				<span id="unitsdemtext">Units won by Democrats:</span><br>
+				<input type="text" id="unitsdem" value="0"><br><br>
+				<span id="unitsgoptext">Units won by Republicans:</span><br>
+				<input type="text" id="unitsgop" value="0"><br><br>
+				<span id="unitsindtext">Units won by Independents:</span>
+				<input type="text" id="unitsind" value="0"><br>
+				<div id="senateseats">
+					<span id="unitssendemtext">Reserved Democratic Senate Seats:</span><br>
+					<input type="text" id="unitssendem" value="0"><br><br>
+					<span id="unitssengoptext">Reserved Republican Senate Seats:</span><br>
+					<input type="text" id="unitssengop" value="0"><br><br>
+					<span id="unitssenindtext">Reserved Independent Senate Seats:</span><br>
+					<input type="text" id="unitssenind" value="0"><br><br>
+				</div>
+				<input type="Submit" value="Update Votes">
+			</form>
+		</div>
+		<script src="bar-prototype2.js"></script>
 	</body>
 </html>
